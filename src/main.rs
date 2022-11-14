@@ -8,10 +8,8 @@ fn main() {
     let mut rng = rand::thread_rng();
     let secret_number = rng.gen_range(1..=100);
 
-    println!("The secret number is: {secret_number}");
-
     loop {
-        print!("Enter your number: ");
+        print!("Guess the number (1 ~ 100): ");
         io::stdout().flush().unwrap();
 
         let mut input = String::new();
